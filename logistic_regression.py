@@ -11,8 +11,6 @@ from sklearn.model_selection import cross_val_score
 
 data = pd.read_csv('dataR2.csv')
 X, y = preprocessing.preprocessing()
-print(X.shape)
-print(y.shape)
 X_train, X_test, y_train, y_test = train_test_split(X, y)
 
 lr = LogisticRegression().fit(X_train, y_train)
